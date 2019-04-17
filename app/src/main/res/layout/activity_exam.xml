@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ExamActivity">
+
+    <TextView
+        android:id="@+id/tv_exam_rus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="4dp"
+        android:background="@drawable/question"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_exam_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_exam_rus"
+
+
+        android:layout_margin="4dp"
+        android:background="@drawable/answer"
+        android:hint="Переведите предложение"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+
+        android:paddingBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_congrats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_exam_eng"
+        android:gravity="center"
+        android:text="@string/correctly_answered"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/primary"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/include_layout"
+        layout="@layout/content_exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_exam_eng" />
+</RelativeLayout>

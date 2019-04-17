@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Полиглот</string>
+    <string name="new_lesson">Начать урок</string>
+    <string name="new_lesson_from_beginning">Начать урок сначала</string>
+    <string name="correctly_answered">Отлично!</string>
+    <string name="questions_rating_ended">Поздравляем, Вы прошли Урок!</string>
+    <string name="heart_rating_ended">У Вас закончились попытки!</string>
+    <string name="dialog_text_first">В каждом уроке у вас есть по %1$d жизни, после %1$d ошибок вы начинаете урок с начала. Что бы перейти на следующий урок вам нужно составить правильно %2$d предложений подряд.</string>
+    <string name="dont_show_again">Больше не показывать</string>
+    <string name="alert_dialog_title">Инструкции</string>
+    <string name="dialog_text_first_new_words">Необходимо выбрать правильный перевод к слову</string>
+    <string-array name="lesson_number">
+        <item>Урок 1</item>
+        <item>Урок 2</item>
+        <item>Урок 3</item>
+        <item>Урок 4</item>
+        <item>Урок 5</item>
+        <item>Урок 6</item>
+        <item>Урок 7</item>
+        <item>Урок 8</item>
+        <item>Урок 9</item>
+        <item>Урок 10</item>
+        <item>Урок 11</item>
+        <item>Урок 12</item>
+        <item>Урок 13</item>
+        <item>Урок 14</item>
+        <item>Урок 15</item>
+    </string-array>
+
+    <string-array name="lesson_description">
+        <item>Базовая форма глагола</item>
+        <item>Местоимения. Вопросительные слова</item>
+        <item>Глагол to be. Предлоги места. Like/Want</item>
+        <item>Притяжательные местоимения</item>
+        <item>Професии. Этикет</item>
+        <item>Прилагательные. Указательные местоимения. Существительные</item>
+        <item>Слова-параметры. Глаголы. Существительные Употребление much и many</item>
+        <item>Параметры времени. Числительные. Месяцы. Дни недели</item>
+        <item>Предлоги. Существительные</item>
+        <item>Предлоги. Существительные. Направления</item>
+        <item>Существительные. Прилагательные и наречия</item>
+        <item>Существительные</item>
+        <item>Описание людей. Части тела. Цвет. Погода</item>
+        <item>Существительные. Неправильные глаголы</item>
+        <item>Существительные. Глаголы</item>
+
+    </string-array>
+
+    <string-array name="congratulations">
+        <item>Превосходно</item>
+        <item>Отлично!</item>
+        <item>Браво!</item>
+        <item>Великолепно!</item>
+        <item>Замечательно!</item>
+        <item>Прекрасно!</item>
+        <item>Чудесно!</item>
+        <item>Прелестно!</item>
+        <item>Невероятно!</item>
+    </string-array>
+
+    <string-array name="errors">
+        <item>Упс, ошибочка!</item>
+        <item>Неудача!</item>
+        <item>Осечка!</item>
+        <item>Фиаско!</item>
+        <item>Промахнулись!</item>
+        <item>Попробуйте еще!</item>
+        <item>Сконцентрируйтесь!</item>
+        <item>Мимо!</item>
+    </string-array>
+
+</resources>

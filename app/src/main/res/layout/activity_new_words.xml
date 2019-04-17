@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_background"
+    android:orientation="vertical"
+    tools:context=".Activities.NewWordsActivity">
+
+    <TextView
+        android:id="@+id/tv_new_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/primary_text" />
+
+
+    <TextView
+        android:id="@+id/tv__new_words_congrats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Отлично!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/primary"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/include_layout_new_word"
+        layout="@layout/content_new_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_background"
+        android:layout_weight="4" />
+</LinearLayout>

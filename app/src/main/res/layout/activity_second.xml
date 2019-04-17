@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_background"
+    tools:context=".Activities.SecondActivity">
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Базовая форма глагола"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray" />
+
+    <include layout="@layout/content_second_label_lesson_continue" />
+
+    <include layout="@layout/content_second_label_lesson" />
+
+    <include layout="@layout/content_second_label_words" />
+
+    <include layout="@layout/content_second_label_description" />
+
+</LinearLayout>
