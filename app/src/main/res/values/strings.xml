@@ -10,6 +10,8 @@
     <string name="dont_show_again">Больше не показывать</string>
     <string name="alert_dialog_title">Инструкции</string>
     <string name="dialog_text_first_new_words">Необходимо выбрать правильный перевод к слову</string>
+    <string name="need_to_buy">Данный урок является платным</string>
+    <string name="lesson_locked">Урок откроется после того как вы ответите на %1$d предложений подряд в предыдущем уроке.</string>
     <string-array name="lesson_number">
         <item>Урок 1</item>
         <item>Урок 2</item>

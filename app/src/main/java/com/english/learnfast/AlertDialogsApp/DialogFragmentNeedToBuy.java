@@ -17,7 +17,7 @@ public class DialogFragmentNeedToBuy extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Внимание");
         builder.setIcon(R.drawable.ic_warning_black_24dp);
-        builder.setMessage("Данный урок является платным")
+        builder.setMessage(R.string.need_to_buy)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
