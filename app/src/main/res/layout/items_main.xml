@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@drawable/unlock"
+    android:background="@drawable/borders_green"
     android:orientation="vertical">
 
 
@@ -19,9 +19,9 @@
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
             android:layout_margin="16dp"
-            android:src="@drawable/ic_label_black_24dp"
+            android:src="@drawable/item_check"
 
-            android:visibility="invisible" />
+            android:visibility="visible" />
 
         <TextView
             android:id="@+id/tv_number"

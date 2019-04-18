@@ -75,10 +75,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
         if (isLessonNew()) {
             mNewLessonContinueTv.setTextColor(getResources().getColor(R.color.divider));
-            mContentSecondLabelLessonContinueLl.setBackgroundResource(R.drawable.lock_continue);
+            mContentSecondLabelLessonContinueLl.setBackgroundResource(R.drawable.borders_grey);
+            mLabelLessonContinueIv.setImageResource(R.drawable.item_x);
         } else {
+            mLabelLessonContinueIv.setImageResource(R.drawable.item_check);
             mNewLessonContinueTv.setTextColor(getResources().getColor(R.color.primary_text));
-            mContentSecondLabelLessonContinueLl.setBackgroundResource(R.drawable.unlock);
+            mContentSecondLabelLessonContinueLl.setBackgroundResource(R.drawable.borders_green);
         }
 
     }

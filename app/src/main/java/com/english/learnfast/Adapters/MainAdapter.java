@@ -43,14 +43,14 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
 
         if (position == 0) {
-            holder.mItemsRecyclerLl.setBackgroundResource(R.drawable.unlock);
-            holder.mRateIv.setImageResource(R.drawable.ic_label_black_24dp);
+            holder.mItemsRecyclerLl.setBackgroundResource(R.drawable.borders_green);
+            holder.mRateIv.setImageResource(R.drawable.item_check);
         } else if (presenterDb.getPassRatingByLessonId(position)) {
-            holder.mItemsRecyclerLl.setBackgroundResource(R.drawable.unlock);
-            holder.mRateIv.setImageResource(R.drawable.ic_label_black_24dp);
+            holder.mItemsRecyclerLl.setBackgroundResource(R.drawable.borders_green);
+            holder.mRateIv.setImageResource(R.drawable.item_check);
         } else {
-            holder.mItemsRecyclerLl.setBackgroundResource(R.drawable.lock);
-            holder.mRateIv.setImageResource(R.drawable.ic_lock_black_24dp);
+            holder.mItemsRecyclerLl.setBackgroundResource(R.drawable.borders_dark_grey);
+            holder.mRateIv.setImageResource(R.drawable.item_lock);
 
         }
 

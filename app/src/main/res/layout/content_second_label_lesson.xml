@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="86dp"
     android:layout_margin="8dp"
-    android:background="@drawable/unlock"
+    android:background="@drawable/borders_green"
     android:orientation="vertical">
 
 
@@ -16,11 +16,11 @@
             android:id="@+id/iv_label_lesson"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
             android:layout_margin="16dp"
-            android:src="@drawable/ic_label_black_24dp" />
+            android:src="@drawable/item_check" />
 
         <TextView android:layout_marginLeft="16dp"
             android:id="@+id/tv_new_lesson_number"
