@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.english.learnfast">
 
+    <uses-permission android:name="com.android.vending.BILLING" />
+
     <application
         android:name="com.english.learnfast.RoomDatabase.App"
         android:allowBackup="true"
