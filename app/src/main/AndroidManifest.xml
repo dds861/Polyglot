@@ -3,6 +3,7 @@
     package="com.english.learnfast">
 
     <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="com.english.learnfast.RoomDatabase.App"
