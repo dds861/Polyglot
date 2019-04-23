@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Полиглот</string>
+    <string name="app_name">Грамматика английского</string>
     <string name="new_lesson">Начать урок</string>
     <string name="new_lesson_from_beginning">Начать урок сначала</string>
     <string name="correctly_answered">Отлично!</string>
