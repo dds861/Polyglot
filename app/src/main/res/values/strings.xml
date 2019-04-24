@@ -12,6 +12,14 @@
     <string name="dialog_text_first_new_words">Необходимо выбрать правильный перевод к слову</string>
     <string name="need_to_buy">Данный урок является платным</string>
     <string name="lesson_locked">Урок откроется после того как вы ответите на %1$d предложений подряд в предыдущем уроке.</string>
+
+    <!--facebook-->
+    <string name="facebook_app_id">347743746092042</string>
+    <string name="fb_login_protocol_scheme">fb347743746092042</string>
+
+    <string name="yandex_api_key">20bbad8c-8135-42f5-b361-71206c09a67b</string>
+
+
     <string-array name="lesson_number">
         <item>Урок 1</item>
         <item>Урок 2</item>

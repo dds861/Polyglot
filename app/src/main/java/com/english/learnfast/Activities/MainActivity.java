@@ -1,5 +1,6 @@
 package com.english.learnfast.Activities;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -17,6 +18,10 @@ import com.english.learnfast.Models.LessonMain;
 import com.english.learnfast.Models.PreferencesApp;
 import com.english.learnfast.Presenter.PresenterDb;
 import com.english.learnfast.R;
+import com.facebook.appevents.AppEventsConstants;
+import com.facebook.appevents.AppEventsLogger;
+import com.yandex.metrica.YandexMetrica;
+import com.yandex.metrica.YandexMetricaConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecycler;
     private PresenterDb presenterDb;
     private PreferencesApp preferencesApp;
+    private AppEventsLogger logger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initView();
 
+        onLoadYandexMetrics();
+        onLogFacebookEvent();
 
         setInitialData();
         setupRecyclerview();
@@ -50,6 +58,23 @@ public class MainActivity extends AppCompatActivity {
             newFragment.show(getSupportFragmentManager(), "missiles");
 
         }
+    }
+
+    public void onLogFacebookEvent() {
+        logger = AppEventsLogger.newLogger(getApplicationContext());
+        logger.logEvent(AppEventsConstants.EVENT_NAME_VIEWED_CONTENT);
+    }
+
+    private void onLoadYandexMetrics() {
+
+//        String API_key = "20bbad8c-8135-42f5-b361-71206c09a67b";
+        String API_key = getResources().getString(R.string.yandex_api_key);
+        // Создание расширенной конфигурации библиотеки.
+        YandexMetricaConfig config = YandexMetricaConfig.newConfigBuilder(API_key).build();
+        // Инициализация AppMetrica SDK.
+        YandexMetrica.activate(getApplicationContext(), config);
+        // Отслеживание активности пользователей.
+        YandexMetrica.enableActivityAutoTracking((Application) getApplicationContext());
     }
 
 //    @Override
@@ -102,11 +127,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                     intent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
-                }
-                else
+                } else
                 //uncomment if you need only show to 1 and 2 positions to show this AlertDiaglog
 //                    if (position == 1 || position == 2)
-                    {
+                {
                     if (presenterDb.getPassRatingByLessonId(position)) {
                         //uncomment if you need all lessons to be accessible
 //                    if (true) {
@@ -114,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                         intent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
-                    } else{
+                    } else {
                         DialogFragment newFragment = new DialogFragmentNeedToPass();
                         newFragment.show(getSupportFragmentManager(), "missiles");
                     }

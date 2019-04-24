@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "796052477898",
+    "firebase_url": "https://englishlearnfast-720ec.firebaseio.com",
+    "project_id": "englishlearnfast-720ec",
+    "storage_bucket": "englishlearnfast-720ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796052477898:android:39a18d131b45b3bc",
+        "android_client_info": {
+          "package_name": "com.english.learnfast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796052477898-4nlcjjri3lcktgitnl3hke1m4c3h0oe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAur-zElDIEU2mSXEhwOv4s0wVRQyT5aBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796052477898-4nlcjjri3lcktgitnl3hke1m4c3h0oe9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
